@@ -1,0 +1,55 @@
+
+	/*content_up*/
+.content_up .content_up_l{width:536px;float: left;}
+.content_up .content_up_r{width:394px;float: right;}
+.content_up .content_up_l_title{width:496px;padding-top: 21px;padding-bottom: 12px;border-bottom: 1px dashed #00A2AC;}
+.content_up .content_up_l_title h1,h2{float: left;font-size: 16px;color: #00A2B3;font-weight: bold;}
+.content_up .content_up_l_title h2{text-indent: 15px;}
+.content_up .content_up_l_dl{margin-top: 15px;}
+.content_up .content_up_l_dl dt,dd.d_1{float: left;font-weight: bold;text-indent: 10px;}
+.content_up .content_up_l_dl dt,dd.d_1 a{color: black;}
+.content_up .content_up_l_dl dt,dd.d_1 a:hover{color: #0064D4;}
+.content_up .content_up_l_dl dd p{font-weight:normal;line-height: 20px;}
+.content_up .content_up_l_dl dd.d_2{float: right;margin-top: 125px;padding-right: 23px;
+	background: url("../images/news_img_2.png") no-repeat right center;height: 17px;}
+.content_up .content_up_l_dl dd.d_2 a{color: #A8D562;}
+.content_up .content_up_l ul{margin-top: 25px;}
+.content_up .content_up_l ul li{height: 28px;line-height: 28px;border-bottom: 1px dashed #C6C6C6;}
+.content_up .content_up_l ul li a{color:#434343;}
+.content_up .content_up_l ul li a:hover{color:#0064D4;}
+.content_up .content_up_l ul li span{float: right;}
+/*content_up_r*/
+.content_up_r .content_up_r_title{float: right;padding-left:150px;padding-top: 21px;padding-bottom: 12px;border-bottom: 1px dashed #00A2AC;}
+.content_up_r .content_up_r_title h1,h2{float: left;font-size: 18px;color: #00A2B3;font-weight: bold;}
+.content_up_r .content_up_r_title  h2{text-indent: 15px;}
+.content_up_r .content_up_r_box{padding-top: 75px;}
+.content_up_r .content_up_r_box .content_up_r_1{margin-right: 10px;}
+.content_up_r .content_up_r_box .content_up_r_1 a:hover{opacity: 0.7; }
+.content_up_r .content_up_r_box .content_up_r_1 a{width: 270px;height: 80px;
+	display:block;font:20px/80px "微软雅黑";text-align: center;color:white;font-weight: bold;}
+.content_up_r .content_up_r_box .content_up_r_1 a.left_1{background:url("../images/btn_bg_1.png");}
+.content_up_r .content_up_r_box .content_up_r_1 a.middle_1{margin:10px 0;background:url("../images/btn_bg_2.png");}
+.content_up_r .content_up_r_box .content_up_r_1 a.right_1{background:url("../images/btn_bg_3.png");}
+.content_up_r .content_up_r_box .content_up_r_1,.content_up_r_2{float: left;}
+.content_up_r .content_up_r_box .content_up_r_2 .left_2{display:block;width: 114px;height: 139px;background: url("../images/service-onlining_4z5y.jpg");margin-bottom: 12px;}
+.content_up_r .content_up_r_box .content_up_r_2 .right_2{display:block;width: 114px;height: 108px;background: pink;background: url("../images/u36446731611792050800fm21gp0_8tnq.jpg");}
+/*content_next*/
+.content_next  {margin-top: 15px;}
+.content_next .content_next_l dt img{margin: 3px;}
+.content_next .content_next_l dt{width: 535px;height: 169px;border:1px solid #D9D9D9;}
+.content_next .content_next_l dd.ddd_2{height:17px;width:50px;margin-left:454px;
+	padding-right: 23px;background: url("../images/news_img_2.png") no-repeat right center;}
+.content_next .content_next_l dd.ddd_2 a{color:#A8D562;}
+.content_next .content_next_l dd.ddd_1{width: 530px;height: 142px;line-height: 26px;
+	margin-top: 12px;text-indent: 40px;color: #5A5A5A;}
+.content_next .content_next_l {margin-right: 48px;}
+.content_next .content_next_l ,.content_next_r{float: left;color: #666666;}
+.content_next .content_next_r div img{margin:3px;}
+.content_next .content_next_r .content_next_r_img{width: 389px;height: 163px;margin-bottom:30px;position:relative;}
+.content_next .content_next_r .div_1{margin-bottom:16px;padding-left: 38px;height:18px;background: url("../images/news_img_6.png") no-repeat left center;}
+.content_next .content_next_r .p_1{padding-left: 38px;height: 18px;background: url("../images/news_img_7.png")no-repeat left center ;}
+.content_next .content_next_r .pp{text-indent: 38px;}
+.content_next .content_next_r .div_2{margin:16px 0 12px 0;padding-left: 38px;height: 18px;background: url("../images/12906_r4_c2.png")no-repeat left center ;}
+.content_next .content_next_r .div_3{padding-left: 38px;height: 18px;background: url("../images/12906_4_c2.png")no-repeat left center ;}
+
+

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>天宇</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body>
+        <header>
+             <nav class="hw">
+                    <span><a class="a1" href="#">天宇首页<a/></span>&nbsp<span style="color:red;">|</span>
+                    <span><a class="a1" href="#">收藏首页</a></span>
+                 <div class="list"> 
+                    <ul class="clearfix">
+                        <li><a href="#">Hi,欢迎来到天宇</a></li>
+                        <li><span><a href="#">请登录</a></span>&nbsp|&nbsp<span><a href="#">免费注册</a></span></li>
+                        <li><a href="#">我的天宇</a></li>
+                        <li><a href="#">手机版</a></li>
+                        <li><a href="#">帮助中心</a></li>
+                    </ul>
+                </div>
+             </nav>
+        </header>
+        <div class="search hw clearfix">
+             <div class="logo">
+                  <a  class="logo-l" href="#">天宇</a>
+             </div>
+                <div class="search-r">
+                      <div class="search-bd clearfix">
+                            <input type="text"  placeholder="请输入"/>
+                            <button>搜索</button>
+                            <ul>
+                                <li>热门搜索：</li>
+                                <li>iPhone 6s</li>
+                                <li>小米 2s</li>
+                                <li>ipad mini</li>
+                                <li>魅蓝</li>
+                                <li>荣耀7</li>
+                                <li>三星s6</li>
+                                <li>华为p7</li>
+                            </ul>
+                      </div>
+                      <div class="shopping"><a href="#"><i>&#xe61e;</i>&nbsp  我的购物车</a></div>
+                </div>
+        </div> 
+
+             <!-- 导航菜单 -->
+             <div class="nav-menu">
+                 <ul>
+                     <li><a href="#"><i>&#xe601;</i>&nbsp 商品分类</a>
+                            <ol>
+                                <li><a href="#">手机通讯<i>&#xe619;</i></a></li>
+                                <li><a href="#">手机配件<i>&#xe619;</i></a></li>
+                                <li><a href="#">智能硬件<i>&#xe619;</i></a></li>
+                            </ol>
+                            <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+                            <script type="text/javascript">
+                            $(function(){
+                                $('.nav-menu ul li:first').hover(function(event) {
+                                    $(this).children('ol').stop().slideToggle(500);
+                                });
+                            })
+                            </script>
+                     </li>
+                     <li><a href="#">依旧换新</a></li>
+                     <li><a href="#">APP推广</a></li>
+                     <li><a href="#">微商城</a></li>
+                     <li><a href="#">M星人</a></li>
+                 </ul>
+             </div>
+             <!-- banner -->
+             <div class="banner">
+                    <ul class="bw clearfix">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ol>
+                        <li class="current">1</li>
+                        <li>2</li>
+                    </ol>
+                    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+                    <script type="text/javascript">
+                    $(function(){
+                         var num=0;
+                         var num02=0;
+                         var timer=null;
+
+                         $('.banner ol li').click(function(event) {
+                             var add=$(this).index();
+                              $('.banner ul').stop().animate({'left':add*-100+"%"}, 600) ;
+                                 // $('.banner ol li').stop().animate({'left':$(this).index()*-100+'%'},500); 
+                              $(this).addClass('current').siblings().removeClass('current');
+                              // console.log(add)
+                              num02=$(this).index();
+                              num=$(this).index();
+                         });
+
+                         function autoplay(){
+                            num++;
+                            num02++
+                            if(num02>1){
+                                num02=0;
+                            }
+                            if(num>2){
+                                num=1;
+                                $('.banner ul').css('left',0);
+                            }
+                           $('.banner ul').stop().animate({'left':-num*100+"%"}, 600) ;
+                           $('.banner ol li').eq(num02).addClass('current').siblings().removeClass('current');
+
+                           // console.log(num02)
+                         }
+                         
+                        timer= setInterval(autoplay,2000)
+                        $('.banner').mouseenter(function(event) {
+                                clearInterval(timer);
+                        }).mouseleave(function(event) {
+                             timer= setInterval(autoplay,2000)
+                        });
+                    })
+                    </script>
+             </div>
+             <!--直通车 -->
+            <div class="tongche bw">
+                 <h2 class="showh2">直通车</h2>
+                 <ul>
+                     <li>
+                     <a href="content.html" target="_blank">
+                         <h1>本周推荐</h1>
+                         <p>主流手机品牌配件</p>
+                     </a>                        
+                     </li>
+                     <li>
+                      <a href="#">
+                          <h1>超值功能机</h1>
+                         <p>买十送1哦！</p>
+                      </a>                       
+                     </li>
+                     <li>
+                      <a href="#">
+                           <h1>特色惠机</h1>
+                         <p>天宇特色资源机器</p>
+                      </a>
+                        
+                     </li>
+                     <li>
+                         <a href="#"> 
+                              <h1>车载电子</h1>
+                             <p>热门电子产品</p>
+                         </a>      
+                     </li>
+                 </ul>
+                 <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+                 <script type="text/javascript">
+                 $(function(){
+                     $('.tongche ul li').each(function(index,element) {
+                         $(element).css('backgroundImage','url(images/tongche'+(index+1)+'.png)');
+                     });
+                 })
+                 </script>
+            </div> 
+            <!-- 热卖 -->
+            <div class="hot bw clearfix">
+                <h2 class="showh2">热卖</h2>
+                <ul>
+                    <li>
+
+                        <a href="#" class="imga">
+                            <img src="images/hot1.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+
+                    <li>
+
+                        <a href="#" class="imga">
+                            <img src="images/hot2.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+
+                    <li>
+
+                        <a href="#" class="imga">
+                            <img src="images/hot3.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+
+                    <li>
+
+                        <a href="#" class="imga">
+                            <img src="images/hot4.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+
+                    <li class="sdlast">
+
+                        <a href="#" class="imga">
+                            <img src="images/hot5.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+                            <!--下面5排列 -->
+                      <li>
+
+                        <a href="#" class="imga">
+                            <img src="images/hot6.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+
+                      <li>
+
+                        <a href="#" class="imga">
+                            <img src="images/hot7.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+
+                      <li>
+
+                        <a href="#" class="imga">
+                            <img src="images/hot8.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+
+                      <li>
+
+                        <a href="#" class="imga">
+                            <img src="images/hot9.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+
+                      <li class="sdlast">
+
+                        <a href="#" class="imga">
+                            <img src="images/hot10.png" alt="手机" title="天宇卖场" width="92" height="186"/>
+                        </a>
+
+                        <div><a href="#">魅族魅蓝Note2(移动联动双4G)2GB+16GB灰色</a> </div>
+
+                        <div><a href="#">￥登陆后查看</a><a href="#">加入购物车</a></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer">
+                <div class="bw clearfix">
+                    <dl>
+                        <dt><a href="#">帮助中心</a></dt>
+                        <dd><a href="#">会员注册</a></dd>
+                        <dd><a href="#">买家入门</a></dd>
+                        <dd><a href="#">卖家专区</a></dd>
+                        <dd><a href="#">常见问题</a></dd>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="#">支付方式</a></dt>
+                        <dd><a href="#">支付方式</a></dd>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="#">交易保障</a></dt>
+                        <dd><a href="#">行货保障</a></dd>
+                        <dd><a href="#">售后服务</a></dd>
+                        <dd><a href="#">准时发货</a></dd>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="#">投诉维权</a></dt>
+                        <dd><a href="#">举报管理</a></dd>
+                        <dd><a href="#">联系我们</a></dd>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="#">微商店</a></dt>
+                        <dd><a href="#">快速开店</a></dd>
+                          <dd><a href="#">店铺管理</a></dd>
+                        <dd><a href="#">推广店铺</a></dd>
+                    </dl>
+                </div>
+                <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+                <script type="text/javascript">
+                $(function(){
+                    $('.footer dl dt').each(function(index,element){
+                        $(element).css('backgroundImage','url(images/footbg'+(index+1)+'.png)');
+                    })
+                })
+                </script>
+                <p class="bw p1"><span style="color:#8B8B8B;">友情链接：</span><a href="#"><span>众点移动</span></a><span>&nbsp |&nbsp </span>
+                    <a href="#"><span>快递100</span></a><span>&nbsp |&nbsp </span><a href="#"><span>朝太阳母婴</span></a><span>&nbsp |&nbsp </span>
+                    <a href="#"><span>护理游戏</span></a><span>|</span><a href="#"><span>快米手机</span></a><span>&nbsp |&nbsp </span>
+                    <a href="#"><span>Hi-WiFi</span></a><span>&nbsp |&nbsp </span><a href="#"><span>安卓助手</span></a>
+                </p>
+
+                 <p class="bw p2"><a href="#"><span>关于天宇</span></a><span>&nbsp |&nbsp </span>
+                    <a href="#"><span>天宇动态</span></a><span>&nbsp |&nbsp </span><a href="#"><span>招贤纳士</span></a><span>&nbsp |&nbsp </span>
+                    <a href="#"><span>入驻商家</span></a><span>|</span><a href="#"><span>合作伙伴</span></a><span>&nbsp |&nbsp </span><a href="#"><span>联系我们</span></a>
+                </p>
+
+                <p class="bw p3">© 2012 - 2015 STNTS. All Rights Reserved.深圳市纬地科技有限公司 ©版权所有 粤ICP备05070962号-2</p>
+            </div>
+
+            <!--fix-->
+        <a class="fix" href="#" title="返回顶部"></a>
+            <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+            <script type="text/javascript">
+               
+            $(function(){
+                
+                 $(window).scroll(function(){
+                    var scrTop=$(window).scrollTop();
+                    if(scrTop==0){
+                       $('.fix').hide();
+                    }else{
+                         $('.fix').show();
+                    }
+                 })
+                
+                 $('.fix').click(function(event) {
+                         $('thml,body').stop().animate({scrollTop:0},400)         
+                 });
+            })
+            </script>
+</body>
+</html>

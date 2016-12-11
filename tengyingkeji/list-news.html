@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>腾盈科技</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<link type="text/css" rel="stylesheet" href="css/base.css" />
+<link type="text/css" rel="stylesheet" href="css/list-news.css" />
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<body>		
+				<!-- header开始 -->
+		<div class="header">
+				<div class="header_nav">
+						<div class="header_nav_l">
+							<a href="index.html" target="_blanck">腾盈科技</a>
+						</div>
+							<div class="header_nav_r">
+									<div class="header_nav_r_up">
+										<img src="images/phone.png" alt="phone" title="phone">
+										<span>7*12小时热线&nbsp:&nbsp</span>
+										<span class="up">18974879568</span>
+									</div>
+									<div class="header_nav_r_next">
+										<input style="color:#ccc;" class="text" type="text" value="输入服务名称" id="inp1">
+										<input class="btn" type="button">
+									</div>
+                                    <script type="text/javascript">		
+										var inp1=document.getElementById('inp1');
+                                             inp1.onfocus=function(){
+                                                if(inp1.value=="输入服务名称"){
+                                                     inp1.value="";
+                                                    inp1.style.color="#333";
+                                                 }
+                                            } 
+
+                                        inp1.onblur=function(){
+                                            if(inp1.value==""){
+                                            inp1.value="输入服务名称";
+                                            inp1.style.color="#ccc";
+                                             }
+                                         }
+                                      </script>   
+							</div>
+				</div>	
+		</div>
+				<!--nav开始  -->
+		<div class="nav">
+				<ul>
+					<li class="show-li"><a href="index.html">网站首页</a></li>
+					<li class="show-li"><a href="#">关于我们</a>
+							<ul class="ulbox" id="ul1">
+								<li><a href="">关于我们</a></li>
+							</ul>
+					</li>
+					<li class="show-li"><a href="list-news.html" target="_blanck">新闻中心</a></li>
+					<li class="show-li"><a href="#">技术实力</a></li>
+					<li class="show-li"><a href="#">解决方案</a>
+							<ul class="ulbox" id="ul2">
+								<li><a href="">智慧城市</a></li>
+								<li><a href="">软件开发</a></li>
+								<li><a href="">IT系统集成</a></li>
+								<li><a href="">IT企业培训</a></li>
+							</ul>
+					</li>
+					<li class="show-li"><a href="#">下属子公司</a>
+							<ul class="ulbox posi-li" id="ul3">
+								<li><a href="">湖南迈威</a></li>
+								<li><a href="">软件开发</a></li>
+							</ul>
+					</li>
+					<li class="show-li"><a href="#">关于我们</a></li>
+				</ul>
+				 <script type="text/javascript">
+                        $(function(){
+                          	$('.show-li').hover(function(){
+                          $(this).children('ul').stop().slideToggle(400);
+                            });           
+                        })
+            </script>
+		</div>	
+			<!--banner区域 -->
+			<div class="banner">
+					<a href="#"></a>
+			</div>	
+			<!-- banner_dwon -->
+						<div class="banner_dwon">
+								<div class="banner_dwon_1">
+										<span> News</span>	
+										<a class="aa" href="index.html" target="_blanck">网站首页</a>
+											>>
+										<a href="">新闻中心</a>
+								</div>
+						</div>
+						<!--灰色部分 -->
+									<div class="gray">
+									</div>
+				<!--contet-->
+					<div class="content clearfix">
+							<div class="content">
+									<div class="contentl">
+											<ul>
+												<li><a href="">公司新闻</a></li>
+												<li><a href="">行业新闻</a></li>
+											</ul>
+									</div>
+
+									<div class="contentr clearfix">
+											<ul>
+							<li><a href="list-news-page1.html" target="_blanck">任正非管理哲学：高度重视规则制度</a> <span>2016-01-23</span></li>
+							<li><a href="#">中国政务微信公号数量已突破10万</a> <span>2016-01-23</span></li>
+							<li><a href="#">畅谈大数据：政府应紧急设立首席数据官</a> <span>2016-01-23</span></li>
+							<li><a href="#">第二届中国智慧城市国际博览会将于今年7月份举行</a> <span>2016-01-23</span></li>
+							<li><a href="#">物联网与万物互联</a> <span>1970-01-01</span></li>
+							<li><a href="#">苹果中国收的旧iPhone去哪儿了？富士康</a> <span>2016-01-23</span></li>
+							<li><a href="#">再战广电系 运营商组团杀入智能家庭</a> <span>1970-01-01</span></li>
+							<li><a href="#">甲骨文：安卓操作系统为谷歌赚了310亿美元</a> <span>2016-01-23</span></li>
+											</ul>
+									</div>
+							</div>  
+						</div>   
+			<!--footer_two--> 
+			<div class="footer_two">
+					<div class="footer_p">
+					<p>​地址：北京市海淀区中关村南大街48号1幢4层C4096室</p>
+					<p class="p_mar">​电话:18974879568  邮箱：win@bjimage.cn QQ:372908681</p>
+					<p>​版权所有：北京腾盈畅想科技有限公司​</p>
+					</div>
+			</div>
+</body>
+</html>
+
+
+
+
+

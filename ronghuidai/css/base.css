@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/**css初始化**/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td,menu{ margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; } 
+h1, h2, h3, h4, h5, h6{ font-size:12px; font-weight:normal;}
+ul,ol{list-style: none;}
+img{display: block; border:0 none;}
+input {  font-family: "SimSun","宋体"; border:0 none; outline-style:none;}
+textarea { resize:none; } 
+a{text-decoration: none;}
+.clearfix:after{content:''; height:0; line-height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{zoom:1;} /*针对ie低级版本的浏览器*/
+body {font-size:12px; font-family:"微软雅黑";}  /*正文的字体大小和颜色*/
+.w{ width:980px; margin:0 auto;}/*版心类*/
+
+/*header区域*/
+.header{width:100%;height: 136px;border-top: 3px solid #09A3AF;}
+.header .nav{width: 840px;height: 136px;margin:0 auto;}
+.header .nav div a{display:block;width: 208px;height: 66px;margin-top: 46px;
+	background: url("../images/logo.png") no-repeat;text-indent: -9999px;float: left;}
+.header .nav ul{float: right;font-size: 18px;margin-top: 54px;overflow: hidden;}	
+.header .nav ul li{float: left;}	
+.header .nav ul li a{color: #666;text-decoration: none;line-height: 50px;
+	display: inline-block;padding:0 13px;height: 50px;}	
+.header .nav ul li a:hover{background:#09A3AF;color: white;}
+	/*banner*/
+.banner{position: relative;width: 100%;height: 440px;overflow:hidden;}
+.banner ul { position: absolute;width: 300%;height: 440px;}
+.banner ul li{background:url(../images/ifs_bxp1.jpg)no-repeat center 0;width: 33.333%;height: 440px;float:left;}
+.banner .textbox{position:absolute;z-index:999;top:50%;left:50%;margin-left: 58px;margin-top:-198px;}
+.banner .textbox .li-box{position:fixed;left:0;}
+.banner .textbox .banner_text{width: 265px;color:#009688;position: absolute;left: 50%;
+	background: url("../images/2ga0.png")repeat-y right top;
+	margin:70px 0 0 170px;padding-right: 31px;}
+.banner .textbox .banner_text .banner_text_p_1{font:12px "宋体";text-indent:20px; }
+.banner .textbox .banner_text .banner_text_p_2{font:30px "微软雅黑";height: 50px;line-height: 50px;text-indent: 10px;}
+.banner .textbox .banner_text .banner_text_p_3{font:12px "微软雅黑";}
+.banner .textbox .btn a{width: 189px;height: 38px;position: absolute;left:-27px;
+	color:#fff;text-decoration:none;margin: 170px 0 0 245px;display: inline-block;
+	text-align: center;line-height: 38px; background: url("../images/btn_bg.png");border: 1px solid #fff;}
+.banner .textbox .btn a:hover{background:rgba(9 ,150 ,136 ,0.2);color: #009688;border-color: rgba(9, 163, 175, 1);}
+.banner ol{width:48px;height: 16px;position: absolute;
+				left: 50%;bottom: 0px;margin-left: -24px;}
+.banner ol li{width: 16px;height: 16px;float: left;background:white;border-radius: 50%;}
+.banner ol li.current{opacity: 0.5;}
+/*position_one*/
+.position_one{width: 100%;height: 52px;background: #ECEFF1;line-height: 49px;}
+.position_one .w span,.te_a{float: left;color: #5A5A5A;text-decoration: none;}
+.position_one .w  .te_a:hover{text-decoration: underline;}
+.position_one .w div{float: right;font-size: 16px;font-style: italic;border-bottom: 1px solid #fff;
+	background: url("../images/position_bg.png") no-repeat left center;
+	color: #00A2AC;padding-left: 123px;}
+/*footer_one*/
+.footer_one{margin-top: 50px;}
+.footer_one dt h1,h2{float: left;font-size: 18px;color: #00A2B3;font-weight: bold;}
+.footer_one dt h2{text-indent: 15px;}
+.footer_one dd {padding-bottom: 43px;border-bottom: 1px dashed #00A2AD;}
+.footer_one dd div{display: inline-block;cursor: pointer;margin-top: 25px;width: 183px;height: 48px;}
+.footer_one dd div.img-1{background: url("../images/yinlian_xpal.jpg");}
+.footer_one dd div.img-1:hover{background: url("../images/yinlian0_ttqr.jpg");}
+.footer_one dd div.img-2{background: url("../images/cnbank0_v08f.jpg");}
+.footer_one dd div.img-2:hover{background: url("../images/cnbank_arht.jpg");}
+.footer_one dd div.img-3{background: url("../images/jianshebank0_dgnw.jpg");}
+.footer_one dd div.img-3:hover{background: url("../images/jianshebank_clfl.jpg");}
+.footer_one dd div.img-4{background: url("../images/pinganbank0_ek69.jpg");}
+.footer_one dd div.img-4:hover{background: url("../images/pinganbank_kb3a.jpg");}
+.footer_one dd div.img-5{background: url("../images/pufabank0_1vrl.jpg");}
+.footer_one dd div.img-5:hover{background: url("../images/pufabank_oatm.jpg");}
+
+/*footer_two*/
+.footer_two{width: 100%;height: 80px;background: #ECEFF1;text-align:center;margin-top: 15px;overflow: hidden;}
+.footer_two .footer_a a{color: #00A2BB;text-decoration: none;line-height: 50px;padding: 0 25px;}
+/*fix*/
+.fix{display: block;width: 40px;height: 40px;position:fixed;right: 60px;bottom:35px;
+	background: url("../images/top_02.png") no-repeat 0 0px;display:none;}
+.fix:hover{background: url("../images/top_02.png") no-repeat 0 -42px;}
+	
+
+
+
+
+
+ 
+

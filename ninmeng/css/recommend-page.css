@@ -1,0 +1,34 @@
+
+.recommend{ background: url("../images/new_rec_rp.png");margin-top: 20px;overflow:hidden;}
+p.current-link {margin:24px 0 0 39px; }
+p.current-link span{color: #B1B1B1;}
+p.current-link a{color: #B1B1B1;}
+p.current-link a:hover{text-decoration:underline;color:#B1B1B1;}
+
+.recommend-1{width:640px;border-right: 1px solid #E8E8E8;float:left;padding:50px 65px 0 90px;}
+.recommend-l-text{width: 640px;}
+.recommend-l-text .title{font-size: 26px;color: black;}
+.recommend-l-text  p.title-p{margin-top: 25px;color: #707070;font-size: 14px;}
+.recommend-l-text .title-box{padding-bottom: 15px;border-bottom:2px solid #EFEFEF;text-align: center;}
+.recommend-l-text .fansbox {font-size: 18px;color: #707070;position: relative;margin: 37px 0 10px 0;}
+.recommend-l-text .fansbox span{width: 20px;height: 20px;position: absolute;display: block;}
+.recommend-l-text .fansbox span.spl{background: url(../images/zyh_1.png);left: -30px;top:0;}
+.recommend-l-text .fansbox span.spr{background: url(../images/zyh_2.png);right: 33px;top: 0;}
+.recommend-l-text p{font-size: 14px;line-height: 24px;color: #707070;}
+.recommend-l-text img{width: 100%;margin:40px 0;}
+.recommend-l-foot{margin-bottom:80px;width: 538px;height: 96px;padding:45px 35px 35px;border-radius: 5px;position: relative;border: 1px solid #D8D8D8;}
+.recommend-l-foot span.pos-title{display:block;background-color: #FFB400;border-radius: 4px;text-align: center;line-height: 40px;
+	font-size: 18px;width: 120px;height: 40px;color: white;position: absolute;left: 50%;margin-left: -60px;top:0;margin-top: -20px;}
+
+
+.recommend-r{float:right;width: 310px;padding:0 57px 0 67px;}
+div.recommend-r-img-1{width: 310px;height: 200px;padding-bottom: 48px;border-bottom: 1px solid #EEE;margin-bottom: 35px;}
+.recommend-r h1 {color:#707070;font-size: 16px;padding-bottom:5px;}
+.recommend-r h1 span{color:#ffb400;}
+.recommend-r ul li a{font-size:16px;color:#707070;display: block;margin-top: 10px;}
+.recommend-r ul li a:hover{text-decoration: underline;}
+.recommend-r ul li div{padding-bottom: 20px;border-bottom: 1px solid #E2E2E2;margin-top: 20px;}
+
+
+
+

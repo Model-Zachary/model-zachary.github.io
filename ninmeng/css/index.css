@@ -1,0 +1,43 @@
+
+/*banner*/
+.banner {position:relative;width: 100%;overflow:hidden;}
+.banner ul{width: 300%;position:relative;}
+.banner ul li{width: 33.33333%;float:left;overflow:hidden;background: url(../images/banner-bg1.jpg) center center;}
+.banner ul li a{display:block;width: 9000px;position:relative;left:50%;margin-left:-4500px;}
+.banner ul li a img{display:block;margin: 0 auto;}
+.banner ol{position: absolute;bottom: 0;left:50%;margin-left: -19px;}
+.banner ol li{float: left;width: 16px;height: 16px;margin-right:16px;background: white;border-radius: 50%;}
+.banner ol li.current{opacity: 0.5;}
+
+/*recommend*/
+
+.recommend{height: 620px;background: url(../images/new_rec_rp.png);overflow: hidden;}
+ h1.show-title{color: #707070;text-align: center;font-size: 24px;
+	font-weight: bold;font-family: "宋体";margin-top: 54px;position: relative;}
+.recommend h1 span{font-weight: normal;}
+ h1.show-title i{display:block;width: 60px;height: 2px;background: #B6B6B6;position: absolute;
+	top:52px;left: 50%;margin-left: -30px;}
+
+.recommend ul{width: 978px;height: 352px;background: white;margin: 65px auto 38px;}
+.recommend ul li{float: left;margin: 8px;background: pink;width: 310px;height: 160px;cursor:pointer;}
+
+.more-show{width: 100px;height: 30px;border:1px solid #ADADAD;margin:0 auto;font-size: 14px;color: #707070;
+	border-radius: 2px;text-align:center; line-height: 30px;display: block;}
+.more-show:hover{border-color:#ffb400;color: #ffb400;background: #fff;}
+
+/*classify*/
+.classify{height: 350px;background: url(../images/jingpin_rp.png);position:relative;}
+.classify h1 i{background: #B6B6B6;}
+.classify-list{position: relative;width: 850px;height: 120px;margin: 65px auto 0;overflow:hidden;}
+.classify-list ul {width: 99999px;position:relative;}
+.classify-list ul li{float: left;margin:0 25px;height: 120px;}
+.classify span{position:absolute;width: 17px;height: 29px;background:url(../images/turn_icon.png) no-repeat -1px -1px;margin-top:-70px;margin-left: 120px;cursor: pointer;}
+.classify span.r{right:120px;background:url(../images/turn_icon.png) no-repeat -21px -1px;}
+.classify span.l:hover{background-position: -1px -31px;}
+.classify span.r:hover{background-position: -20px -31px;}
+
+/*show*/
+.show{height: 750px;background: url("../images/new_rec_rp.png");overflow: hidden;}
+.show ul{width: 986px;height: 480px;margin:65px auto 50px;}
+.show li{float: left;}
+

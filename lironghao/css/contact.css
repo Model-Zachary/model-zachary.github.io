@@ -1,0 +1,20 @@
+			
+.right{position: relative;}
+.right .right-main{width: 224px;height: 544px;position:fixed;top:20%;left:40%;}
+/*重置a*/
+ .text_one a{
+ 	color: #6b6b6b;
+ 	background: url("../images/../images/noCheckedMenu.png");
+ }
+ .text_one a:hover{color: red;
+ 	background: url("../images/checkedMenu-color.png");}
+
+ .text_five a{
+ 		color: white;
+ 	    background: url("../images/checkedMenu.png"); 
+ }
+ .text_five a:hover{    
+ 		color: white;
+ 	    background: url("../images/checkedMenu.png"); 
+ }
+/*覆盖那个base.css中two的hover属性*/

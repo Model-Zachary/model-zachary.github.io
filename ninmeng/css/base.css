@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/**css初始化**/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td,menu{ margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; } 
+h1, h2, h3, h4, h5, h6{ font-size:12px; font-weight:normal;}
+ul,ol{list-style: none;}
+img{display: block; border:0 none;}
+input {  font-family: "SimSun","宋体"; border:0 none; outline-style:none;}
+textarea { resize:none; } 
+.clearfix:after{content:''; height:0; line-height:0; visibility:hidden; display:block; clear:both;}
+.clearfix{zoom:1;} /*针对ie低级版本的浏览器*/
+body {font-size:12px; font-family:"微软雅黑";background: #E8E8E7;} /*正文的字体大小和颜色*/
+i,em{font-weight: normal;}
+a{color:#707070;text-decoration: none;}
+a:hover{color:#ffb400;text-decoration: none;}
+.w{width: 1230px;margin:0 auto;}
+/*header*/
+.header{height: 60px;font-size: 16px;line-height: 60px;border-bottom: 1px solid #E2E2E2;}
+.header-l{float: left;}
+.header-l ul{float: left; position: relative;}
+.header-l a.logo{background:url(../images/logo.png);width: 200px;height: 60px;display: block;text-indent: -99999px;float: left;}
+.header-l li a i{width: 13px;height: 12px;display: inline-block;position: relative;top:-9px;left: -2px;}
+.header-l li .posi-n{background: url(../images/sprite.png) no-repeat 0 -14px;}
+.header-l li .posi-h{background: url(../images/sprite.png) no-repeat 0 0;}
+.header-l ul li{float: left;height: 60px;margin-left: 50px;}
+
+.header-r {float: right;}
+.header-r a i{display: inline-block;background: url(../images/sprite.png) no-repeat;margin-right: 8px;vertical-align: middle;}
+.header-r a.a-1 i{background-position: -19px -1px;width: 19px;height: 19px;}
+.header-r a.a-2 {margin:0 40px;}
+.header-r a.a-3{color:#ffb400;padding-left: 25px;background: url(../images/header-r_bg.png) no-repeat left center;}
+.header-r a.a-2 i{background-position: -44px -1px;width: 11px;height: 18px;}
+
+
+/*footer*/
+.footer{height: 330px;margin-top: 50px;background: url(../images/ftbg_rp.png);color: white;overflow:hidden;}
+.footer a{color: white;}
+.footer a:hover{text-decoration: underline;}
+.footer-maxbox{margin-top: 70px;}
+
+.footer-l{float: left;}
+.footer-title{font-size: 24px;margin-bottom: 34px;}
+.footer-l-box{margin-bottom:90px;}
+.footer-box a,span{margin:0 5px;}
+
+.footer-m{float: left;margin-left: 318px;}
+.footer-m div.a-box {margin-top: 90px;}
+.footer-m div.a-box a img{height: 44px;display: inline-block;}
+
+
+.footer-r{float: right;}
+.footer-r div{margin-top: 30px;}

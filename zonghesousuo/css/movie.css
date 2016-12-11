@@ -1,0 +1,96 @@
+.wrap {
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header {
+  height: 1.76rem;
+  background-color: #b30d01;
+  font-size: 0.48rem;
+  text-align: center;
+  line-height: 2.2rem;
+  color: white;
+}
+.header h2 {
+  background: url(../images/logo.png) 0.9rem 0.68rem no-repeat;
+  background-size: 0.8rem;
+}
+/*标题*/
+.menu {
+  height: 1.44rem;
+  background-color: #f7f6f6;
+  border-bottom: 0.02rem solid #cccccc;
+}
+.menu ul {
+  margin-left: 0.8rem;
+}
+.menu ul li {
+  font-size: 0.52rem;
+  text-align: center;
+  line-height: 1.44rem;
+  float: left;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.menu ul li:last-of-type {
+  margin-right: 0;
+}
+.menu li a {
+  color: #666;
+}
+.menu li a:hover {
+  color: red;
+}
+/*当前状态*/
+.current {
+  background: url(../images/arrow.png) -0.08rem bottom no-repeat;
+  color: red;
+}
+.section h2 {
+  font-weight: normal;
+}
+.section h2 a {
+  font-size: 0.6rem;
+  color: #424344;
+}
+.section h2 a:hover {
+  color: red;
+}
+.section p {
+  font-size: 0.48rem;
+  color: #cac9c9;
+  margin-top: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.show {
+  margin-top: 0.8rem;
+  margin-left: 0.66rem;
+  border-bottom: 1px solid #ccc;
+}
+.section2 {
+  position: relative;
+}
+.section2 h2 {
+  width: 8.74rem;
+}
+.section2 img {
+  width: 4.1rem;
+  height: 2.3rem;
+  position: absolute;
+  right: 0.6rem;
+  top: 0;
+}
+.section5 {
+  border: 0 none;
+  position: relative;
+}
+.section5 p {
+  padding-bottom: 0.8rem;
+}
+.section5 img {
+  width: 5.28rem;
+  height: 2.94rem;
+  position: absolute;
+  top: 1rem;
+  right: 0.6rem;
+}

@@ -1,0 +1,75 @@
+
+.main_maxbox{ /**设设置右边边第一个背景图**/
+width: 662px; height: 1200px; margin:0 auto; position:relative; }	
+.right_image_01{ /**早年经历**/ 
+width: 110px; margin:35px 0 7px; height: 28px; display: block; } 
+.right_text{ /**早年经历介绍，三段p标记组成，用了同一个class控制**/
+font: 12px "微软雅黑"; color: #545454; width: 664px; height: 60px; line-height: 21px; }                                      /**banner图开始**/
+.wrap{width: 644px;height: 313px;background:url(../images/banner_bj.png);overflow:hidden;margin-top: 23px;;}
+.boxban{width: 588px;height: 265px;position:relative;margin:8px auto;}
+.wrap i{width: 27px;height: 28px;position:absolute;top:50%;margin-top:-14px;
+        background:url(../images/arrow_left.png)no-repeat 0 0;cursor:pointer;left:15px;}
+.wrap i.righti{right:15px;background-position: 0 bottom;left:auto;}
+div.ul-box { width: 588px;height: 265px;overflow: hidden;position:relative;}
+.wrap ul{width: 9999px;position:absolute;left:0;top:0;}
+.wrap ul li{float:left;width: 588px;height: 265px;cursor:pointer;}
+
+.scroll{ /**banner图开始**/
+width: 95px; height: 24px; padding-left:9px;position: absolute;right:30px;bottom:0;  background-color:#d6d6d6;border-radius:2px;}
+ol.scroll li{background:url(../images/chcked_03.png)no-repeat right 0;width: 17px;height: 14px;float:left;margin:7px  4px 4px 0;cursor:pointer;}
+ol.scroll li.current{background:url(../images/chcked_03.png)no-repeat 0 0;margin-left: 2px;}
+.but_box{ /**button的三个按钮**/
+padding-left: 10px; width: 350px; height:29px; }
+.but_box a{ text-decoration: none; font: 14px  "微软雅黑"; line-height: 29px; text-indent: 1em; }
+.but_2{ color: white; }
+.but_1,.but_3{ color: black; }
+.but{ display: block; width: 108px; height: 29px; background: url("../images/button_1.png") no-repeat; float: left; }
+.clearfix:after{ /**清除对按钮进行的浮动**/
+content: ""; display: block; visibility: hidden; height: 0; clear: both; }
+.but_2{ display: block; width: 86px; height: 29px; background: url("../images/button_2.png") no-repeat; float: left; }
+.but_2 , .but_3{ margin-left:20px; }                                        /**按钮样式结束**/
+
+.fen_xian{ margin-top: 30px; width: 662px; height: 2px; background: url("../images/fen_xian.png"); }
+/**李荣浩歌曲详情介绍**/
+.music_box{ width: 662px; margin:40px 0 45px; font: 12px "微软雅黑"; color: #676767; }
+.music_wrap { height:35px; margin-top: 10px; position: relative; }
+.music_wrap span{ position: absolute; top: 18px; }
+.music_text{ font: 12px "微软雅黑"; width: 200px; height:130px; margin: 6px 0 20px; line-height: 20px; }
+.music_but{ margin-top: 29px; width: 74px; height: 22px; background: url("../images/paly.png") no-repeat; }
+.music_but a{ font: 12px "arial"; text-decoration: none; color:gray; line-height: 21px; padding: 18px; }
+/**清理浮动**/
+.music_1, .music_2, .music_3{ float: left; }
+/**对三个歌曲介绍的边距进行调节**/
+.music_2{ margin: 0 20px; }
+
+/**menu荣浩介绍部分开始**/
+#ronghao_menu{ border: 1px solid #858585;border-bottom: 0; margin-top: 28px; width: 662px; height: 48px; background: url("../images/menu_ronghao_bj.png"); }	
+/**menu目录**/
+#ronghao_menu ul li{ height:48px; float: left; font: 14px "微软雅黑"; text-align: center; line-height: 48px; }
+.list_1{ width: 200px; height: 48px; color: white; cursor: help; letter-spacing: 2px; background: url("../images/checked_left.png") repeat-y right top; } 
+/**背景分割线**/
+.list_2{ background: url("../images/checked_left.png") repeat-y right top; }
+.list_3{ background: url("../images/checked_left.png") repeat-y right top; }
+.list_4{ background: url("../images/checked_left.png") repeat-y right top; }
+.list_5{ background: url("../images/checked_left.png") repeat-y right top; }
+.list_6{ background: url("../images/checked_left.png") repeat-y right top; }
+.list_7 a{ padding: 0 21px; color: #239af5; display: inline-block; }
+.list_7 a:hover{ background: #eeeded; color: #239af5; }
+#ronghao_menu .list_show a{ color: #239af5; display: inline-block; padding: 0 14px; }
+#ronghao_menu .list_show a:hover{ background: #eeeded; color: #239af5; }
+/**基本信息的样式区**/
+#guanyu_ronghao{ position: relative; /**给分割线定位**/; }
+.jiben_xinxi{ width: 160px; margin: 20px 45px 0; }
+.jiben_xinxi div{ font: 14px "宋体"; color: gray; width: 230px; height: 150px; }
+.jiben_xinxi img{ margin-left: 35px; }
+.jiben_xinxi_1{ margin-top:19px; }
+.jiben_xinxi_1 span{ color: #555354; font-size: 16px; font-family: "微软雅黑"; font-weight: bold; }
+.ronghao_xian{ /**分割线**/
+width: 135px; height: 2px; background: url("../images/fen_xian.png"); position: absolute; top:45px; left:170px; }
+.xian_copy{ top:45px; left:424px; }
+.img_ronghao,.jiben_xinxi{ float: left; display: block; /**图片转换为块，是因为快独占一行，因此可以去除因为插入图片而导致的多余边距问题**/; }
+/**基本信息**/
+
+.cardbox ul{width: 660px;height: 251px;display:none;}
+.cardbox ul.current{display:block;}
+.cur{background:#eeeded;}

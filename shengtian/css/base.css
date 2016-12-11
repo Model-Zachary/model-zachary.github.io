@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/**css初始化**/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td,menu{ margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; } 
+h1, h2, h3, h4, h5, h6{ font-size:12px; font-weight:normal; }
+img{ display: block; border:0 none; }
+a{ text-decoration: none; }
+ul ,ol { list-style: none; }
+input { font-family: "SimSun","宋体"; border:0 none; outline-style:none; }
+textarea { resize:none; } 
+.clearfix:after{ content:''; height:0; line-height:0; visibility:hidden; display:block; clear:both; }
+.clearfix{ zoom:1; } /*针对ie低级版本的浏览器*/
+body { font-size:12px; font-family:"微软雅黑"; }  /*正文的字体大小和颜色*/
+/**top部分设置**/
+.top{ width: 100%; height: 85px; background: #FAFAFA; }
+.top .header{ width: 1200px; height: 85px; margin: 0 auto; position: relative; }
+.top .header .logo{ float: left; width: 403px; height: 52px; display: inline-block; margin-top: 22px; }		
+.top .header .logo a{ display:block; width: 403px; height: 52px; background: url("../images/logo.png") no-repeat 0 0; text-indent: -66666px; }
+/**nav部分设置**/
+.top .header .nav ul.navul{ padding-right:15px; padding-top: 40px; float: right; }
+.top .header .nav ul.navul li.demo{ position: relative; text-align: center; background:url("../images/dashed_bj.png") repeat-y right top; float: left; height: 29px; font:14px "微软雅黑"; }
+.nav ul li a{ text-align: center; text-decoration:none; line-height: 29px; }  /**设置nav下a的属性**/ 
+.li_one,.li_two  a{ padding:0 15px; /**设置第一个li和第二个li的左右位置**/; }
+.li_one a{ /**单独设置第一个li的颜色**/  color: orange; }
+.li_three,.li_four,.li_five,.li_six a{ /**设置第三个li和最后一个li左右位置**/    padding: 0 28px 0px 15px; }
+.li_show a{ color: #646464; /**设置第二个li和最后一个li的字体颜色**/; }
+
+.li_show ul{position:absolute;left:0;top:45px;width:100px;background-color: #343434;display:none;z-index:5;}
+.li_show ul li a{color:#B4BAB9;display:block;text-align: center;}
+.li_show ul li a:hover{background:#222222;color:#B4BAB9;}
+li.li_three ul{width: 110px;}
+li.li_four ul{margin-left: 2px;}
+li.li_five ul{margin-left: 8px;}
+li.li_six ul.sixul li a{padding:0;}
+
+div.dropdwon ul{position:absolute;left:4px;background-color: #FFFFFF;width: 95px;display:none;z-index: 6;}
+div.dropdwon ul li{text-align: center;}
+.li_show a:hover{ /**设置第二个li和最后一个li的hover颜色**/color: orange; }
+.li_three span,.li_four span,.li_five span,.li_six span{ width: 8px; height: 7px; background: url("../images/li_dropwdon.png") no-repeat; position: absolute; }
+.li_three span,.li_four span,.li_five span,.li_six span{ right:15px; top:11px; }
+/**dropdwon部分设置**/
+.dropdwon{ width: 95px; height:21px; background: #F8F8F8; border:1px solid #E2E2E2; position: absolute; right: 0; font:12px "微软雅黑"; line-height: 21px; padding-left: 7px; }
+.dropdwon a{ color: #A0A0A0; text-decoration: none; }
+.dropdwon a:hover{ color: orange; }
+.dropdwon  span{ width:8px; height:7px; background:url("../images/li_dropwdon.png"); float: right; margin:7px 6px 0 0; }
+
+/**footer属性设置**/
+.footer{ width: 100%; height: 90px; background: #F7F7F7; font:12px "微软雅黑"; color:#646464; text-align: center; padding-top: 15px; margin-top: 60px; }
+.footer img{ display: inline-block; margin-top: 32px; }
+.footer .img_l{ width: 83px; height: 30px; }
+.footer .img_r{ width: 110px; height: 40px; }
+

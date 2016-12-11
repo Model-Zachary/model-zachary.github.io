@@ -1,0 +1,31 @@
+/*对小标签的初始化*/
+i,em{font-style: normal;float: left;}
+.content{margin-top: 55px;}
+.content h1{color: rgb(67, 67, 67);font-size: 24px;margin-bottom: 6px;color: #5a5a5a;}
+.content h2{font-size: 15px;color: rgb(0, 162, 173);padding-bottom: 28px;border-bottom: 1px solid #5a5a5a;
+	font-weight: normal;color: #5a5a5a;margin-bottom: 10px;}
+.content .content_p{margin-bottom: 25px;}
+.content span{display: block;width: 800px;height: 1px;background:#5a5a5a;margin: 50px 0;margin-left: 180px;}
+
+/*content_l*/
+
+.content_l{float: left;}
+.content_l_1{width:250px;height: 125px;background: #00a2ad;margin-bottom: 60px;}
+.content_l_1 ul li a{text-decoration: none;color: white;font-size: 14px;display: block;
+	border-bottom:1px solid #aaa;text-align: center;line-height: 50px;}
+	.content_l_1 ul li a:hover{background-color:#9fc5e8;color: white}
+.content_l dl dt img {width: 250px;height: 166px;display: block;margin-bottom: 6px;}
+.content_l dl dd a{display: block;font-size: 14px;color:#5a5a5a;font-weight: bold;}
+.content_l dl dd a:hover{color: #0064d4;}
+.content_l dl dd div{color: #929292;}
+/*content_r*/
+.content_r  { width: 700px;float: right;}
+.content_r  .div_1,.p1{text-align: center;}
+.content_r  .p1{padding:10px 0 15px;color: #5A5A5A;}
+.content_r  .div_1{color: #00a2ad;font-size: 16px;line-height: 1.7em;font-weight: bold;}
+.content_r .solid{width: 100%;height:12px;margin-bottom: 24px;margin-left: 24px;background: #f5f5f5;border:1px solid #e5e5e5;}
+.content_r p.p2{line-height: 30px;font-size: 14px;color: #5A5A5A;}
+.content_r p.p3{margin-top: 18px;}
+.content_r p.p4{margin-bottom: 150px;}
+.content_r p a{color:#5A5A5A;}
+.content_r p a:hover{color:#47cdff;}

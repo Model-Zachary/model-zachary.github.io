@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>蓉汇贷</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/list-news-page1.css">
+<body>
+		<div class="header">
+				<div class="nav">
+					 <div>
+					 	<a href="index.html">蓉汇贷</a>
+					 </div>
+					 <ul>
+					 	<li><a href="index.html" target="_blanck">网站首页</a></li>
+					 	<li><a href="#">关于我们</a></li>
+					 	<li><a href="#">公司业务</a></li>
+					 	<li><a href="#">新闻中心</a></li>
+					 	<li><a href="#">在线留言</a></li>
+					 	<li><a href="#">联系我们</a></li>
+					 </ul>
+				</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+            <script type="text/javascript">
+           $(function(){
+                 var colors=['#145ea5','#131925','#145ea5']//所道最小就会右百边，所以给他添加背景色用数组弄好后再遍历出来
+        $('.banner ul li').each(function(index,element){
+            $(element).css('background-image','url(images/ifs_bxp'+(index+1)+'.jpg)')
+                 if(index==2){
+                     $(element).css('background-image','url(images/ifs_bxp1.jpg)')
+                }  
+            $(this).css('backgroundColor',colors[index]);  
+        })
+
+
+                var num = 0;
+                var num02 = 0;
+                var timer = null;
+        function autoPlay(){  //右按钮
+                num++;
+                num02++;
+                if(num>2){
+                    num = 1;
+                    $('.banner ul').css('left',0);
+                 }
+                 if(num02>1){
+                    num02=0;
+                 }
+                 $('.banner ol li').eq(num02).addClass('current').siblings().removeClass('current');
+                 $('.banner ul').stop().animate({'left':-num*100+'%'}, 400)
+
+        }
+                function add(){  //左按钮
+                    num--;
+                    num02--;
+                    if(num<0){
+                        num = 1;
+                     }
+                      if(num02<0){
+                          num02=1;
+                       }
+                    $('.banner ol li').eq(num02).addClass('current').siblings().removeClass('current');
+                    $('.banner ul').stop().animate({'left':-num*100+'%'}, 400)
+
+                 }   $('.banner .leftbut').click(function(event) {
+                            if(!$(this).hasClass('current'))       //左按钮
+                                add();
+                    });
+
+                    $('.banner .rightbut').click(function(event) {
+                            if(!$(this).hasClass('current'))
+                                autoPlay();                     //右按钮
+                  });
+                 timer = setInterval(autoPlay, 2000)
+            $('.banner').mouseenter(function(event) {
+                clearInterval(timer);
+            }).mouseleave(function(event) {
+                timer=setInterval(autoPlay,2000)
+            });
+
+       
+    })
+            </script>
+		<!-- banner -->
+		<div class="banner">
+			<ul>
+				<li></li>
+                <li></li>
+                <li></li>
+			</ul>
+                 <div class="textbox">
+                        <div class="banner_text">
+                            <p class="banner_text_p_1">汽车抵押·小额分期·银行各类贷款</p>
+                            <p class="banner_text_p_2">信用创造恒久财富</p>
+                            <p class="banner_text_p_3">CREDIT CREATES ENDURING WEALTH</p>
+                        </div>
+                                
+                        <div class="btn">
+                            <a href="#">+了解公司业务+</a>
+                        </div>
+                 </div>
+				 <ol>
+					<li class="current leftbut"></li>
+					<li class="rightbut" style="margin-left:16px"></li>
+				</ol>					
+		</div>
+		<!-- position_one -->
+		<div class="position_one clearfix">
+				<div class="w">
+					<span>您所在的位置：</span>
+					<a class="te_a" href="index.html" target="_black">网站首页</a>
+						<i> >> </i> 
+					<a class="te_a" href="#">新闻中心</a>	
+			<div>
+				028-80582518
+			</div>
+				</div>
+		</div>
+		<!-- content -->
+				<div class="content w clearfix">
+						<div class="clearfix">
+							<h1>新闻中心</h1>
+							<h2>NEWS CENTER</h2>
+						</div>
+							<p class="content_p">我们将会在金融借贷信息中为您推荐最值得您查看的信息，并为您提供最快的金融动态。</p>
+					<p>We will recommend the most worthy of your view of the information in the financial loan information, and provide you with the fastest financial 
+					<br />dynamics.</p>
+					<span></span>
+						
+							<div class="content_dwon clearfix">
+									<!-- content_l-->
+								<div class="content_l">
+									 	<div class="content_l_1">
+									 		 <ul>
+									 		 	<li><a href="">公司动态</a></li>
+									 		 	<li><a href="">行业新闻</a></li>
+									 		 </ul>
+									 	</div>
+									 	
+									 	<dl>
+									 			<dt>
+									 				<a href="#"><img src="images/news_img_1.png" alt=""></a>
+									 			</dt>
+									 				<dd>
+									 					<a href="3">日本提出未来10年经济增长战略 制定</a>
+									 					<div>2015-07-05</div>
+									 				</dd>
+									 	</dl>
+									 	
+								</div>
+								<!-- content_r-->
+								<div class="content_r clearfix">
+										<div class="div_1">日本提出未来10年经济增长战略 制定21个项目</div> 
+					<p class="p1">来源: &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp作者: finance-66 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp发布时间: 2015-07-05&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp87 次浏览</p>
+
+								<div class="solid"></div>
+
+								<p class="p2">
+									本报东京6月20日电 日本政府18日批准了未来10年经济增长战略,提出力争最早于2011年摆脱通货紧缩,在环保、健康、旅游等7个领域创造总计500万个就业机会和123万亿日元的需求,在今后11年实现平均2%以上的经济增长率。</p>
+　 　<p class="p2">这份增长战略是落实首相菅直人提出的“强大经济”目标的具体措施。增长战略制定了21个重点“国家战略项目”,其中包括将核电站、新干线和水务等基础设 施出口市场规模扩展至20万亿日元。此外,增长战略还提出,大力普及新一代智能电网;将在2017年实现“零待学儿童”目标,并在2013年以前实现幼托 一体化;为加强企业的国际竞争力,将把企业所得税实际税率下调至与其他发达国家的相同水平。</p>
+<p class="p3"><a href="#">上一篇： 没有了</a></p>
+<p class="p4"><a href="#">下一篇： 蓉汇贷-信用创造恒久......</a></p>
+								
+								</div><!-- 文章页结束-->
+							</div>
+				</div><!-- content结束标签 -->
+		<!-- footer_one -->
+		<div class="footer_one w clearfix">
+				<dl>
+					<dt class="clearfix"><h1>合作伙伴</h1><h2> Partner</h2></dt>
+					<dd>
+						<div class="img-1"></div>
+						<div class="img-2"></div>
+						<div class="img-3"></div>
+						<div class="img-4"></div>
+						<div class="img-5"></div>
+					</dd>  
+				</dl>
+		</div>
+
+		<!-- footer_two -->
+					<div class="footer_two">
+							<div class="footer_a w">
+						<span><a href="index.html" target="_blanck">网站首页</a></span>
+						<span><a href="#">关于我们</a></span>
+						<span><a href="#">业务种类</a></span>
+						<span><a href="#">在线留言</a></span>
+						<span><a href="#">联系我们</a></span>
+							</div>
+			<p>​​© 2016 蓉汇贷 All rights reserved 四川省创恒融信网络科技有限公司 蜀ICP备15034062号-1</p>
+					</div>
+</body>
+</html>
+
+                  

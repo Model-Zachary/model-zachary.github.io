@@ -1,0 +1,36 @@
+/*对小标签的初始化*/
+i,em{font-style: normal;float: left;}
+.content{margin-top: 55px;}
+.content h1{color: rgb(67, 67, 67);font-size: 24px;margin-bottom: 6px;color: #5a5a5a;}
+.content h2{font-size: 15px;color: rgb(0, 162, 173);padding-bottom: 28px;border-bottom: 1px solid #5a5a5a;
+	font-weight: normal;color: #5a5a5a;margin-bottom: 10px;}
+.content .content_p{margin-bottom: 25px;}
+.content span{display: block;width: 800px;height: 1px;background:#5a5a5a;margin: 50px 0;margin-left: 180px;}
+
+/*content_l*/
+
+.content_l{float: left;}
+.content_l_1{width:250px;height: 125px;background: #00a2ad;margin-bottom: 60px;}
+.content_l_1 ul li a{text-decoration: none;color: white;font-size: 14px;display: block;
+	border-bottom:1px solid #aaa;text-align: center;line-height: 50px;}
+	.content_l_1 ul li a:hover{background-color:#9fc5e8;color: white;}
+.content_l dl dt img {width: 250px;height: 166px;display: block;margin-bottom: 6px;}
+.content_l dl dd a{display: block;font-size: 14px;color:#5a5a5a;font-weight: bold;}
+.content_l dl dd a:hover{color: #0064d4;}
+.content_l dl dd div{color: #929292;}
+/*content_r*/
+.content_r{float: right;width:680px;font-size: 14px;
+	margin-left: 50px;overflow: hidden; }
+.content_r p.p-1 a{color:#5a5a5a;}
+.content_r p.p-1 a:hover{color:#0064d4;}
+.content_r p.time{margin-top: 8px;color: #929292;}
+.content_r p.time{padding-bottom: 8px;border-bottom: 1px solid #ccc;display: block;}
+.content_r p.p-show-2{display: block;margin-top: 15px;}
+.content_r p.p-show a{color: #00a2ad;}
+.content_r p.p-show a:hover{color: #0064d4;}
+
+.content_r .page{width: 210px;margin:12px auto;}
+.content_r .page div{display: inline-block;color: #D00;}
+.content_r .page a{display: inline-block;height: 18px;line-height: 18px;padding:0 3px;margin:0 2px;
+	color:  #5a5a5a;border:1px solid #D5D5D5;}
+.content_r .page a:hover{color: #47cdff;}

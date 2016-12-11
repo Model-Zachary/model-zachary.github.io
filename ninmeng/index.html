@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+<body>
+			<!-- header -->
+		<div class="header w clearfix">
+			 <div class="header-l">
+			 		<a class="logo" href="#">柠檬美食</a>
+			 		<ul>
+			 			<li><a href="#">首页</a></li>
+			 			<li><a href="list.html" target="_blank">推荐</a></li>
+			 			<li><a href="#">发现
+			 				<i class="posi-n"></i>
+			 			</a></li>
+			 			<li><a href="#">商家合作
+							<i class="posi-h"></i>
+			 			</a></li>
+			 		</ul>
+			 		
+			 		<em></em>
+			 </div>
+			 	<div class="header-r">
+			 		<a class="a-1" href="">
+						<i></i>搜索
+			 		</a>
+			 		<a class="a-2" href="">
+						<i></i>客户端
+			 		</a>
+			 		<a class="a-3" href="">柠檬吃货卡</a>
+			 	</div>
+		</div>
+		<!-- banner -->
+		<div class="banner clearfix">
+			<ul class="clearfix">
+                <li><a href=""><img src="images/20151030130258_8366.jpg"></a></li>
+                <li><a href=""><img src="images/20151030130258_8366.jpg"></a></li>
+				<li><a href=""><img src="images/20151030130258_8366.jpg"></a></li>
+			</ul>
+                    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+                    <script type="text/javascript">
+                    $(function(){function d(){a++,b++,a>2&&(a=1,$(".banner ul").css("left",0)),b>1&&(b=0),$(".banner ol li").eq(b).addClass("current").siblings().removeClass("current"),$(".banner ul").stop().animate({left:100*-a+"%"},600)}function e(){a--,b--,0>a&&(a=1,$(".banner ul").css("left","-200%")),0>b&&(b=1),$(".banner ol li").eq(b).addClass("current").siblings().removeClass("current"),$(".banner ul").stop().animate({left:100*-a+"%"},600)}var a=0,b=0,c=null;$(".banner ol .leftbtn").click(function(a){$(this).hasClass("current")||e()}),$(".banner ol .rightbtn").click(function(a){$(this).hasClass("current")||d()}),c=setInterval(d,2e3),$(".banner").mouseenter(function(a){clearInterval(c)}).mouseleave(function(a){c=setInterval(d,2e3)})});
+                    </script>
+				<ol class="clearfix">
+					<li class="current  leftbtn"></li>
+					<li class="rightbtn"></li>
+				</ol>
+		</div>
+		<!--recommend -->
+		<div class="recommend w">
+				<h1 class="show-title"><span>最</span>新推荐<i></i></h1>
+				<ul class="clearfix">
+					<li><img src="images/recommed-bg-1.png" alt=""></li>
+					<li><img src="images/recommed-bg-2.png" alt=""></li>
+					<li><img src="images/recommed-bg-3.png" alt=""></li>
+					<li><img src="images/recommed-bg-4.png" alt=""></li>
+					<li><img src="images/recommed-bg-5.png" alt=""></li>
+					<li><img src="images/recommed-bg-6.png" alt=""></li>
+				</ul>
+			<a href="" class="more-show">更多推荐</a>
+		</div>
+
+		<!--classify -->
+		<div class="classify w">
+				<h1 class="show-title">美食分类<i></i></h1>
+    <!-- solide -->
+			<div class="box">
+                <div class="classify-list clearfix">
+						<ul>
+							<li><a href="javascript:;"><img src="images/1597_3x.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="images/1598_3x.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="images/1599_3x.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="images/1600_3x.png" alt=""></a></li>
+							<li><a href="javascript:;"><img src="images/1601_3x.png" alt=""></a></li>
+
+                            <li><a href="javascript:;"><img src="images/1597_3x.png" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="images/1598_3x.png" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="images/1599_3x.png" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="images/1600_3x.png" alt=""></a></li>
+                            <li><a href="javascript:;"><img src="images/1601_3x.png" alt=""></a></li>
+						</ul>
+				</div>
+                        <span class="l"></span>
+                        <span class="r"></span>  
+                <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+                <script type="text/javascript">
+                $(function(){function d(){a++,a>5&&(a=1,$(".classify-list ul").css("left",0)),$(".classify-list ul").stop().animate({left:170*-a+"px"},800)}function e(){a--,0>a&&(a=4,$(".classify-list ul").css("left","-850px")),$(".classify-list ul").stop().animate({left:170*-a+"px"},800)}var a=0,b=null,c=!0;b=setInterval(d,3e3),$(".box").mouseenter(function(a){clearInterval(b)}).mouseleave(function(a){b=setInterval(d,3e3)}),$(".box .r").click(function(a){1==c&&(d(),c=!1,setTimeout(function(){c=!0},1e3))}),$(".box .l").click(function(a){1==c&&(e(),c=!1,setTimeout(function(){c=!0},1e3))})});
+                </script>
+           </div>                   
+		</div>
+                       
+		<!--show-->
+			<div class="show w">
+					<h1 class="show-title">美食分类<i></i></h1>
+								<ul>
+									<li><a href="#"><img src="images/show-list-img-1.png" /></a></li>
+									<li><a href="#"><img src="images/show-list-img-2.png" /></a></li>
+									<li><a href="#"><img src="images/show-list-img-3.png" /></a></li>
+									<li><a href="#"><img src="images/show-list-img-4.png" /></a></li>
+									<li><a href="#"><img src="images/show-list-img-5.png" /></a></li>
+									<li><a href="#"><img src="images/show-list-img-6.png" /></a></li>
+									<li><a href="#"><img src="images/show-list-img-7.png" /></a></li>
+									<li><a href="#"><img src="images/show-list-img-8.png" /></a></li>                                 
+								</ul>
+					<a href="" class="more-show">更多推荐</a>
+			</div>
+
+<!-- footer -->
+		<div class="footer">
+			<div class="w footer-maxbox">
+				<div class="footer-l">
+						<p class="footer-title">美食改变生活</p>
+					<div class="footer-l-box footer-box">
+						<a href="">商户登录</a><span>|</span>
+						<a href="">消费验证</a><span>|</span><a href="">关于我们</a>
+						<span>|</span><a href="">帮助中心</a><span>|</span>
+					</div>
+					<p class="text">深圳市纬地科技有限公司 ©版权所有 粤ICP备05070962号-2</p>
+				</div>
+							<div class="footer-m ">
+								<p class="footer-title">友情链接</p>
+									<div class="footer-m-box footer-box">
+										<a href="">去民宿</a><span>|</span><a href="">柠檬网微博</a>
+									</div>
+										<div class="a-box">
+										<a href=""><img src="images/sznet110wangan.gif" alt="" style="margin-: ;right:20px;"></a>
+										<a href=""><img src="images/岗亭LOGO.png" alt=""></a>
+										</div>
+							</div>
+					<div class="footer-r">
+						<p class="footer-title">扫码关注App</p>
+							<div><img src="images/sy_qrc.png" alt="" width="132" height="132"></div>
+					</div>
+			</div>
+		</div>
+</body>
+</html>

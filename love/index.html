@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head><title>I love you</title><meta name=keywords content=girl love><meta name=renderer content=webkit><meta charset="UTF-8" /><link rel=stylesheet href=css/style.css type=text/css><link rel="shortcut icon" href=favicon.ico><style type=text/css>
+		#code { float: left; width: 440px; height: 400px; color: #FF2B2B; font-family: "幼圆"; font-size: 14px; }
+			</style></head><body style="background-color: #FFACFF"><div style=display:none><audio src=music/yicijiuhao.mp3 loop autoplay></audio></div><input type=hidden id=loveDate><div id=mainDiv><div id=content><div id=code style=display:none;><span class=space>girl：</span><br><span class=space></span><br><span class=space>我不能确定未来能否给你幸福，</span><br><span class=space></span><br><span class=space>但是我发誓，我会一直努力让你幸福</span><br><span class=space></span><br><span class=space>我不敢保证能让你过上住洋楼，</span><br><span class=space></span><br><span class=space>但是我会努力争取让你幸福...</span><br><span class=space></span><br><span class=space>我很喜欢写日记，</span><br><span class=space></span><br><span class=space>可我日记里没有你。</span><br><span class=space></span><br><span class=space>只因我的日记都记载着过去，</span><br><span class=space></span><br><span class=space>而你在我的生命里，</span><br><span class=space></span><br><span class=space>我想你陪我一起走过这世间的风雨，</span><br><span class=space></span><br><span class=space>你愿意成为我永远的现在么?</span><br><span class=space></span><br><span class=space></span><br><span class=space></span><br><span class=space></span></div><div id=loveHeart><canvas id=garden></canvas><div id=words><div id=messages>记录我们相知的日子<div id=elapseClock></div></div><div id=loveu>girl,I love you forever<br><div class=signature>齐晓智、2016-10-10</div></div></div></div></div></div><div style="display: none"><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1de51c7a10685de3e9dd75efe6bc84dc";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type=text/javascript>var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256941446'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1256941446' type='text/javascript'%3E%3C/script%3E"));</script></div></body><script type=text/javascript src=js/style.js></script><script type=text/javascript>
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date(Date.parse($("#loveDate").val().replace(/-/g,  "/"))); 
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "亲爱的，你的浏览器不支持HTML5!看不了网站效果<br/>"+
+	"请使用以下浏览器 Chrome 14+IE 9+/Firefox 7+/Safari 4+/Opera 10+<br/>"+
+	"如果没有以上浏览器，<br/>";
+	document.body.appendChild(msg);
+    document.execCommand("stop");
+} else {
+	$("#code").css("display", "");
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script></html>

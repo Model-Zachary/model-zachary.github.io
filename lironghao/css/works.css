@@ -1,0 +1,25 @@
+			
+.right-main{width: 630px;color: #333;margin:20px 0 0 50px;line-height: 24px;}
+.right .right-main a{color:#9B30FF;text-decoration: none;display:block;font-size: 14px;margin-top: 10px;
+    text-indent:1em;cursor:pointer;}
+.right .right-main a:hover{color:red;text-decoration: none;}
+div.right-min-main{width: 710px;margin-top: 20px;background: url(../images/ronghao-right.png) no-repeat 365px 0;}
+.right .right-main .right-min-main p{line-height: 20px;font-size: 16px;color: blue;font-family: "宋体";}
+
+/*重置a*/
+ .text_one a{
+ 	color: #6b6b6b;
+ 	background: url("../images/../images/noCheckedMenu.png");
+ }
+ .text_one a:hover{color: red;
+ 	background: url("../images/checkedMenu-color.png");}
+
+ .text_four a{
+ 		color: white;
+ 	    background: url("../images/checkedMenu.png"); 
+ }
+ .text_four a:hover{    
+ 		color: white;
+ 	    background: url("../images/checkedMenu.png"); 
+ }
+/*覆盖那个base.css中two的hover属性*/

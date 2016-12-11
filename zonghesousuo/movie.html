@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <script type="text/javascript">
+!function(n){var e=n.document,t=e.documentElement,i=750,d=i/50,o="orientationchange"in n?"orientationchange":"resize",a=function(){var n=t.clientWidth||320;n>750&&(n=750),t.style.fontSize=n/d+"px"};e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1))}(window);
+        </script>
+        <link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link rel="stylesheet" type="text/css" href="css/movie.css" />
+    </head>
+                
+    <body>
+                <header class="header wrap">
+                      <h2>影视资讯提前报</h2>
+                </header>
+
+               <nav class="menu wrap">
+                   <ul class="clearfix">
+                       <li>涨姿势</li>
+                       <li>时尚</li>
+                       <li>休闲</li>
+                       <li class="current">电影</li>
+                       <li>生活</li>
+                       <li>科技</li>
+                   </ul>
+               </nav>
+               <div class="wrap section">
+                     <section class="section1 show">
+                           <h2><a href="details.html">广电总局严打《叶问3》票房造假3200万元票房作废</a></h2>
+                           <p>1905电影网   2016-3-4   12:45:23  </p>
+                     </section>
+
+                      <section class="section2 show">
+                           <h2><a href="index.html">
+                                《饥饿游戏》男主化身超级英雄 参演DJ Snake热单MV 在城市上空谈恋爱
+                           </a></h2>
+                           <img src="images/bj1.png"  />
+                           <p>1905电影网   2016-1-12   13:45:23   </p>
+                     </section>
+
+                      <section class="section3 show">
+                           <h2><a href="#">《夺宝奇兵5》确定编剧 为斯皮尔伯格老搭档 曾合
+                                作《侏罗纪公园》
+                           </a></h2>
+                           <p>1905电影网   2016-1-12   13:45:23     </p>
+                     </section>
+
+                      <section class="section4 show">
+                           <h2><a href="#">《诛仙》tfboys古装照曝光  造型秀气颜值惊艳帅气</a></h2>
+                           <p>1905电影网   2016-1-12   13:45:23    </p>
+                     </section>
+
+                      <section class="section5 show">
+                           <h2><a href="#">
+                                《疯狂动物城》成内地动画票房冠军 上映16天过10亿超《功夫熊猫3》
+                           </a></h2>
+                           <p>1905电影网   2016-1-12   13:45:23    </p>
+                     </section>
+              </div>
+              <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+              <script type="text/javascript">
+              $(function(){
+                 $('.menu li').click(function(event) {
+                       $(this).addClass('current').siblings().removeClass('current');
+                       $('.cardbox .section').eq($(this).index()).addClass('cur').siblings().removeClass('cur');
+                 });
+              })
+              </script>
+    </body>
+</html>

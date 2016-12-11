@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**css初始化**/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td,menu{ margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; } 
+body, button, input, select, textarea { font:12px/1.5 tahoma, arial, \5b8b\4f53; }
+ul,ol{ list-style:none; }
+img{ border: 0px; }
+
+/**left.html的正文样式**/
+body{ background:url("../images/bjronghao.jpg") fixed; margin-top:20px; font-family: "微软雅黑"; }  /**设置背景图,且不随内容滚动scroll，还是取消fixed**/
+.father{ width:1000px; margin: 0px auto 0px; }
+.clearfather:after{ /**清除浮动**/
+content: ""; height:0; display: block; visibility: hidden; clear: both; }
+.clearfather{ zoom:1; }
+
+.left{ background:url("../images/leftbg.png"); /**设置左边第一个背景图**/
+width: 200px; height:1200px; float: left; position: relative; }
+.left_images_1{ /**切记图片元素是内联的**/ /**左边盒子的第一张图片荣浩的logo**/
+display:block; width: 140px; height: 40px; margin:35px auto 0; }
+.left_images_2{ display: block; width: 170px; height: 16px; margin:15px auto 0; }
+ /**设置第一个input框**/
+
+.input_1{ width: 144px; height: 20px; border:0; background:url("../images/textarea.png"); margin:40px 15px 0; line-height: 20px; text-indent: 1em; font-family: "微软雅黑"; font-size: 12px; color: #b4b4b4; outline-style:none; }
+.input_2{ display: block; width: 16px; height: 15px; position: absolute; top:149px; left:138px; }
+
+li.text_four ul{ z-index:2; width:80px; height: 90px; background-color:red; display:none; position:absolute; top:0px; right:-80px; }
+li.text_four ul a{ background:#6bc7f2; color:white; }
+li.text_four ul a:hover{ background:#dfdede; color:red; }
+
+menu{ text-align: center; margin:25px 0 0  120px; }/**记得clear——menu，有默认值**/
+.text_p{ /**menu中的公共类的一些相同属性**/     
+width: 80px; height: 30px; line-height: 30px; margin-top: 10px; font-family: "微软雅黑"; font-size: 15px; }
+/**menu设置区**/ 
+.text_one{ background: url("../images/checkedMenu.png"); }
+.text_two,.text_three, .text_four, .text_five{ background: url("../images/noCheckedMenu.png"); }
+li.text_four{ position: relative; }
+li.text_four span{ display: block; width: 7px; height: 5px; background: url(../images/arrow.png)no-repeat; position: absolute; right:10px; top:50%; margin-top: -3px; }
+/**menu<a>的效果设置区**/ 
+
+ul li a{ /**代替link因为弊端有些大**/ 
+color: #6b6b6b; text-decoration: none; }
+.text_one a{ color: white; }
+.text_two a:hover,.text_three a:hover,.text_four a:hover,.text_five a:hover{ color: red; background: url("../images/checkedMenu-color.png"); }
+ul li a{ /**转换模式显示的更完全**/ /**这样写会覆盖后面的样式ul li的样式也就是，无形中初始化了这个**/
+display: block; }
+/**鲸鱼font**/
+.why_ronghao{ display: block; width: 130px; height: 20px; margin: 80px auto 0; }	
+.jieshao{ width: 162px; height: 295px; font-size: 12px; color: #999999; margin:18px auto 0; font-family: "微软雅黑"; }	
+
+.jingyu{ display: block; width: 98px; height: 20px; margin: 70px auto 0; }
+.jingyu_content{ display: block; width: 162px; height: 100px; color: #999999; font-size: 12px; font-family: "微软雅黑"; margin:22px auto 0; }
+.jingyu_content span{ padding: 54px; }	
+.fenxiang{ color: white; display: block; width: 170px; height: 20px; margin: 30px auto 0; font: 18px "微软雅黑 bold"; text-align: center; }
+
+.fenxiang span{ margin-left: -6px; }
+.fen_gexian{ width: 188px; height: 4px; display: block; margin: 40px auto 0; }
+.footer_box{ margin-top: 16px; }
+.footer_text{ font:12px "微软雅黑"; color:#999999; text-align: center; padding-top: 3px; }
+.left_1{ background:url("../images/leftborder.png"); /**设置左边第二个背景图**/
+width:10px; height:1200px; float: left; }
+/**  左边结束  **/
+.right{ background:url("../images/rightbj.png"); /**设设置右边边第一个背景图**/
+width:790px; height:1200px; float: left; }
+/*时间*/
+#clock{cursor:help; font-size:14px;width: 150px; height: 20px; position:absolute; left:-162px; top:3%; color:#C5C4C4;}
+
+/*背景音乐*/
+ #imgbox{width: 32px;height: 20px;background:url(../images/btbg.png)no-repeat 0 -21px;position:absolute;top:130px;left:-150px;}

@@ -1,0 +1,20 @@
+/*show*/
+.show{height: 1397px;background: url("../images/new_rec_rp.png");overflow: hidden;}
+.show ul{width: 998px;height: 1063px;margin:65px auto 50px;}
+.show li{float: left;width: 310px;height: 275px;}
+.show li img{width: 310px;height: 160px;}
+.show li.show-li{margin:0 34px;}
+.show .show-p1{font-size: 16px;color: #4C4C4C;line-height: 23px;margin-top: 16px;}
+.show .show-p1:hover{color: #ffb400;}
+.show .show-p2{font-size: 12px;color: #B1B1B1;line-height: 26px;}
+/*h1-showtitle*/
+h1.show-title{color: #707070;text-align: center;font-size: 24px;
+font-weight: bold;font-family: "宋体";margin-top: 54px;position: relative;}
+h1.show-title i{display:block;width: 60px;height: 2px;background: #B6B6B6;position: absolute;
+top:52px;left: 50%;margin-left: -30px;}
+/*more*/
+.more-show{width: 100px;height: 30px;border:1px solid #ADADAD;margin:0 auto;font-size: 14px;color: #707070;
+border-radius: 2px;text-align:center; line-height: 30px;display: block;}
+.more-show:hover{border-color:#ffb400;color: #ffb400;background: #fff;}
+
+	

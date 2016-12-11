@@ -1,0 +1,18 @@
+
+/*重置a*/
+ .text_one a{
+ 	color: #6b6b6b;
+ 	background: url("../images/../images/noCheckedMenu.png");
+ }
+ .text_one a:hover{color: red;
+ 	background: url("../images/checkedMenu-color.png");}
+
+.right{position: relative;}
+ input{border:0 none;outline-style:none;}
+  .right .search{width: 600px;height: 36px;margin:100px auto;background: #b3b3b3;}
+ .right .search .txt{text-indent:12px;width: 499px;height: 34px;float: left;margin:1px 0 0 1px;color:#b4b4b4;}
+  .right .search .btn{width: 100px;height: 36px;font-size:16px;color:white;float: left;cursor: pointer;background:#3385ff;}
+  #posbox{width: 600px;height: 500px;position: absolute;left: 95px;top:180px;}
+  #posbox p{color:red;font-size: 24px;font-family: "宋体";}
+  #posbox a{font-size: 24px;color:#008ad4 ;text-decoration: none;font-family: "宋体";}
+  #posbox a:hover{color:orange;}

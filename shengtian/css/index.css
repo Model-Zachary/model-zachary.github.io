@@ -1,0 +1,61 @@
+
+/**banner部分设置**/
+.banner{position:relative;width: 100%;overflow: hidden;}
+.banner ul.banner_menu {width: 700%;height: 515px;position:relative;} 
+.banner ul.banner_menu  li{height: 515px;width: 14.2857%;float:left;background:url(../images/banner_1.jpg) center 0 no-repeat;} 
+	/**用精灵来贴图**/	
+.banner .banner_btn{height:40px;text-align:center;margin-top: 10px;}	/**padding换成margin不起作用**/	
+.banner .banner_btn a{width: 37px;height:40px;display: inline-block;}
+.banner .banner_btn .btn_1{background:url("../images/menu.gif") no-repeat 0 0;}
+.banner .banner_btn .btn_2{background:url("../images/menu.gif") no-repeat -41px 0;}
+.banner .banner_btn .btn_3{background:url("../images/menu.gif") no-repeat -81px 0;}
+.banner .banner_btn .btn_4{background:url("../images/menu.gif") no-repeat -122px 0;}
+.banner .banner_btn .btn_5{background:url("../images/menu.gif") no-repeat -163px 0;}
+.banner .banner_btn .btn_6{background:url("../images/menu.gif") no-repeat -205px 0;}
+
+/* 给各个a添加相同的解决轮播显示不同精灵图背景的问题*/
+.banner .banner_btn .btn_1.active{background-position: 0 -40px;}
+.banner .banner_btn .btn_2.active{background-position: -41px -40px;}
+.banner .banner_btn .btn_3.active{background-position: -81px -40px;}
+.banner .banner_btn .btn_4.active{background-position: -122px -40px;}
+.banner .banner_btn .btn_5.active{background-position: -163px -40px;}
+.banner .banner_btn .btn_6.active{background-position: -205px -40px;}
+/**content布局开始**/
+.content{width:1140px;margin:39px auto 0;}
+.content_l,.content_m{float: left;height: 273px;}
+.content_l{width:370px;padding-right: 20px;
+	background:url("../images/content_solid.png") repeat-y right center;}
+.content_m{width:390px;background: green;padding:0 30px;
+	background:url("../images/content_solid.png") repeat-y right center; }
+.content_r{width: 260px;height:273px;float: right;}
+/**content,left属性设置**/
+.show_title a{font:16px "黑体";color: #323232;}
+.show_title a:hover{color: blue;}
+.show_title span{font:12px "微软雅黑";color: #323232;text-indent:10px;display: inline-block;}
+.show_title i{width: 222px;height:1px;display: inline-block;background: #F0EFEF;float: right;margin-top: -5px;}
+.content_l p{text-indent: 2em;font:12px "微软雅黑";line-height: 22px;padding-top: 25px;color: #333;}
+.show_btn a{color: white;text-decoration: none;}
+.show_btn a:hover{color: white;text-decoration: none;display: block;background: #25B6F0;}
+.show_btn {width:66px;height: 25px;font:12px "微软雅黑";
+			text-align:center; line-height:25px;margin-top: 35px;
+			border-radius: 2px;background: #323232;}
+/**content,middle属性设置**/	
+.content_m	.show_title i{width:273px;}
+.content_m dl{font:12px "微软雅黑";padding-top: 12px;}
+.content_m dl dt{background: url("../images/middle_rediu.png") no-repeat 0 center;padding-left: 10px;}
+.content_m dl dt a{color: #646464;text-decoration: none;display: inline-block;}
+.content_m dl dt a:hover{color: red;text-decoration:underline;}
+.content_m dl .show_dd{color: #BBBBBB;padding-top: 4px;text-indent: 2em;}
+.content_m dl .show_dd span{float: right;}
+.content_m dl dt .img_bg a{width: 18px;height: 18px;display: inline-block;
+background: url("../images/middle_bg.png") no-repeat right center;float: right;}
+.content_m .show_btn{margin-top:70px;}
+/**content,right属性设置**/
+.content_r{position:relative;}
+.content_r .show_title i {width:112px;}
+.content_r img{margin-top:19px;}
+.content_r .call{position:absolute;right:0px;bottom:70px;}
+.content_r .call p{font-size: 30px;font-weight: bold;color: #ff8a00;letter-spacing: -2px;}
+.content_r .call span{color: #999;}
+.content_r .call i{color: #666;font-style: normal;}
+.content_r .contact{width: 180px;float: right;color: #333;line-height: 16px;margin-top: 8px;}

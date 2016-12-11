@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盛天网络</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+</head>
+	<link type="text/css" rel="stylesheet" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<body><!--top部分-->
+		<div class="top">
+			<div class="header">
+				<h1 class="logo">
+					<a href="javascript:;">盛天网络</a>
+				</h1>
+				<div class="nav">
+					<ul class="navul">
+						<li class="li_one  demo"><a href="#">首页</a></li>
+						<li class="li_two li_show demo"><a href="list-news.html" target="_black">新闻动态</a></li>
+						<li class="li_three li_show demo"><a href="#">产品&服务<span></span></a>
+                                    <ul>
+                                        <li><a href="">网娱平台产品</a></li>
+                                        <li><a href="">互联网增值产品</a></li>
+                                        <li><a href="">移动互联产品</a></li>
+                                        <li><a href="">广告业务</a></li>
+                                    </ul>
+                        </li>
+						<li class="li_four li_show demo"><a href="#">了解盛天<span></span></a>     
+                                       <ul>
+                                            <li><a href="">公司介绍</a></li>
+                                            <li><a href="">公司资源</a></li>
+                                            <li><a href="">发展历程</a></li>
+                                            <li><a href="">公司荣誉</a></li>
+                                            <li><a href="">企业责任</a></li>
+                                            <li><a href="">合作伙伴</a></li>
+                                            <li><a href="">联系方式</a></li>
+                                        </ul>
+                        </li>
+						<li class="li_five li_show demo"><a href="#">投资者关系<span></span></a>
+                                    <ul>
+                                        <li><a href="">基本资料</a></li>
+                                        <li><a href="">最新公告</a></li>
+                                        <li><a href="">证券信息</a></li>
+                                        <li><a href="">投资者来访</a></li>
+                                    </ul>
+                        </li>
+						<li class="li_six li_show demo"><a href="#">加入盛天<span></span></a>
+                                            <ul class="sixul">
+                                                <li><a href="">员工发展</a></li>
+                                                <li><a href="">薪酬福利</a></li>
+                                                <li><a href="">招贤纳士</a></li>
+                                            </ul>
+                        </li>
+					</ul>
+				</div>
+				<div class="dropdwon"><a href="#">盛天旗下站点<span></span></a>
+                                                <ul>
+                                                   <li><a href="#">易乐游</a></li>
+                                                    <li><a href="#">易乐玩</a></li>
+                                                    <li><a href="#">58游戏</a></li>
+                                                    <li><a href="#">盛天招聘</a></li>
+                                                    <li><a href="#">连乐无线</a></li>
+                                                    <li><a href="#">求带</a></li>
+                                                </ul>
+                </div>
+			</div>
+                                <script type="text/javascript">
+                                    $(function(){
+                                        $('.navul>li').hover(function(event) {
+                                           $(this).children('ul').stop().slideToggle(400);
+                                        });
+                                    })
+                                            $(function(){
+                                        $('.dropdwon').hover(function(event) {
+                                           $(this).children('ul').stop().slideToggle(400);
+                                        });
+                                    })
+                                </script>
+		</div>
+		<!--banner部分-->
+		<div class="banner">
+			<ul class="banner_menu">
+				<li></li>
+				<li></li>
+				<li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+				<li></li>
+			</ul>
+	
+		<div class="banner_btn">
+			<a href="javascript:;" class="btn_1 active"></a>
+			<a href="javascript:;" class="btn_2"></a>
+			<a href="javascript:;" class="btn_3"></a>
+			<a href="javascript:;" class="btn_4"></a>
+			<a href="javascript:;" class="btn_5"></a>
+			<a href="javascript:;" class="btn_6"></a>
+		</div>
+                    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+                    <script type="text/javascript">
+                    $(function(){
+                        var num=0;
+                        var num02=0;
+                        var timer=null;
+                        var colors=['#1ca4ee','#1ca4ee','#1ca4ee','#1ca4ee','#1ca4ee','#1ca4ee']
+                       $('.banner ul li').each(function(index,element){
+                            $(element).css({'background-image':'url(images/banner_'+(index+1)+'.jpg)','background-color':colors[index]})
+                                if(index==6){
+                            $(element).css({'background-image':'url(images/banner_1.jpg)'})     
+                                }
+                       })
+                       function autoplay(){
+                                num++;   
+                                num02++;   
+                                if(num>6){
+                                    num=1;
+                                    $('.banner ul').css('left',0)
+                                }
+                                if(num02>5){
+                                    num02=0;
+                                }
+                             $('.banner_btn a').eq(num02).addClass('active').siblings().removeClass('active')
+                           $('.banner ul').stop().animate({'left':num*-100+'%'},500);     
+                       }
+
+                       
+                       $('.banner_btn a').click(function(event) {
+                             
+                             $(this).addClass('active').siblings().removeClass('active');
+                             $('.banner ul').stop().animate({'left':$(this).index()*-100+'%'},500); 
+                                num=$(this).index();    
+                                num02=$(this).index();    
+                             
+                       });
+
+                       
+
+                       timer=setInterval(autoplay,3000);
+                       $('.banner').mouseenter(function(event) {
+                           clearInterval(timer);
+                       }).mouseleave(function(event) {
+                         timer=setInterval(autoplay,3000);
+                       });
+                    })
+                    </script>
+	</div>
+		<!--content部分-->
+		<div class="content clearfix">
+			<div class="content_l">
+				<div class="show_title clearfix">
+					<h2><a href="#">关于盛天<span>About stnts</span></a></h2>
+					<i></i>
+				</div>
+				<p>
+					湖北盛天网络技术股份有限公司是国内领先的场景化互联网用户运营平台，每天有超过两千五百万用户通过盛天网络旗下的各类产品获取游戏、社交、购物、音视频等网络内容与服务。盛天网络更利用大数据技术，甄别不同场景下用户的明确特定需求，为他们量身定制精准的互联网产品与服务。 盛天网络是深圳证券交易所创业板挂牌上市企业，股票代码:300494。
+				</p>
+				<div class="show_btn"><a href="#">了解更多></a></div>
+			</div>
+			<!--middle部分-->
+			<div class="content_m">
+					<div class="show_title clearfix">
+					<h2><a href="#">新闻动态<span>NEWS</span></a></h2>
+					<i></i>
+					</div>
+				<dl>
+					<dt>
+						<a href="list-news-page1.html">关于部分网友访问“58game”近似网站遭遇诈骗的说明...</a>
+						<span class="img_bg"><a href="#"></a></span>
+					</dt>
+
+					<dd class="show_dd"> 我公司类似游戏业务指定宣传网站域名为"www...<span>2016-02-29</span></dd>
+				</dl>
+
+				<dl>
+					<dt>
+						<a href="#">2016年盛天网络春节值班公告</a>
+						<span class="img_bg"><a href="#"></a></span>
+					</dt>
+
+					<dd class="show_dd"> 我公司春节放假时间为2016年2月5日至2016...<span>2016-01-30</span></dd>
+				</dl>
+
+				<dl>
+					<dt>
+						<a href="#">湖北首家互联网上市公司-盛天网络创业之路...</a>
+						<span class="img_bg"><a href="#"></a></span>
+					</dt>
+
+					<dd class="show_dd">盛天网络登陆创业板后，连续创造13个涨停...<span>2016-01-26</span></dd>
+				</dl>
+				<div class="show_btn"><a href="#">了解更多></a></div>
+			</div>
+			<div class="content_r">
+				<div class="show_title clearfix">
+					<h2><a href="#">加入盛天 <span>JOIN US</span></a></h2>
+					<i></i>
+				</div>
+				<a href=""><img src="images/jobs.jpg" alt="img"/></a>
+				<img src="images/call.jpg" alt="img"/>
+				<div class="call">
+					<p>027-86655050</p>
+					<span>
+							传真电话
+						<i>027-87498500</i>
+					</span>
+				</div>
+				<p class="contact">武汉市东湖新技术开发区光谷大道77号金融港B7栋9-11楼</p>
+			</div>
+		</div><!--content结尾标记-->
+		<div class="footer">
+			<p>湖北盛天网络技术股份有限公司版权所有 鄂B2-20110110Copyright © 2012 - 2015 STNTS. All Rights Reserved.</p>
+			<a href=""><img class="img_l" src="images/sm_83x30.png" alt="">
+			<a href=""><img class="img_r" src="images/bottom_small_img.png" alt=""></a>
+	</div><!--footer结束标记-->
+			
+</body>
+</html>
