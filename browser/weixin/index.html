@@ -1,124 +1,20 @@
 <!DOCTYPE html>
-<html>
-    <head>
-     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <meta name="format-detection"content="telephone=no, email=no" />
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="MobileOptimized" content="320">
-    <meta name="screen-orientation" content="portrait">
-    <meta name="x5-orientation" content="portrait">
-    <meta name="full-screen" content="yes">
-    <meta name="x5-fullscreen" content="true">
-    <meta name="browsermode" content="application">
-    <meta name="x5-page-mode" content="app">
-    <meta name="msapplication-tap-highlight" content="no">
-    </head>
-    <script type="text/javascript">
-!function(n){var e=n.document,t=e.documentElement,i=750,d=i/50,o="orientationchange"in n?"orientationchange":"resize",a=function(){var n=t.clientWidth||320;n>750&&(n=750),t.style.fontSize=n/d+"px"};e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1))}(window);
-    </script>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <body>
-            <section class="wrap">
-               <img class="ou1"src="images/ou1.png"/>
-                <div class="circle">
-                     <img src="images/circlr1.png" class="img1" />
-                     <img src="images/circle2.png" class="img2"/>
-                     <img src="images/chong.png" class="img3"/>
-                     <img src="images/yang.png" class="img4"/>
-                     <img src="images/zhang.png" class="img5"/>
-                </div>
-                <div class="taiyang"><img src="images/taiyang.png"/></div>
-                <div class="footer">
-                           <div class="ftou1"><img src="images/ou2.png"/></div>     
-                           <div class="ftou2"><img src="images/ou3.png"/></div>  
-                           <div class="shan">
-                                <img  class="leftshan"  src="images/shan1.png"/>
-                                <img  class="middleshan" src="images/shan2.png"/>
-                                <img   class="rightshan" src="images/shan3.png"/>
-                          </div> 
-                          <div class="shui">
-                                <img src="images/shui.png"/>
-                                <img src="images/chuan.png"/>
-                          </div>  
-                </div>
-                <img class="leftyun" src="images/leftyun.png"/>
-                <img class="rightyun" src="images/rightyun.png"/>
-            </section>
-    </body>
+<html><head><meta charset="utf-8"><meta name="viewport"content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/><meta name="apple-mobile-web-app-capable"content="yes"/><meta name="apple-mobile-web-app-status-bar-style"content="black"/><meta name="format-detection"content="telephone=no, email=no"/><meta name="renderer"content="webkit"><meta http-equiv="X-UA-Compatible"content="IE=edge"><meta name="HandheldFriendly"content="true"><meta name="MobileOptimized"content="320"><meta name="screen-orientation"content="portrait"><meta name="x5-orientation"content="portrait"><meta name="full-screen"content="yes"><meta name="x5-fullscreen"content="true"><meta name="browsermode"content="application"><meta name="x5-page-mode"content="app"><meta name="msapplication-tap-highlight"content="no"></head><script type="text/javascript">!function(n){var e=n.document,t=e.documentElement,i=750,d=i/50,o="orientationchange"in n?"orientationchange":"resize",a=function(){var n=t.clientWidth||320;n>750&&(n=750),t.style.fontSize=n/d+"px"};e.addEventListener&&(n.addEventListener(o,a,!1),e.addEventListener("DOMContentLoaded",a,!1))}(window);</script><link rel="stylesheet"type="text/css"href="css/index.css"/><body><section class="wrap"><img class="ou1"src="images/ou1.png"/><div class="circle"><img src="images/circlr1.png"class="img1"/><img src="images/circle2.png"class="img2"/><img src="images/chong.png"class="img3"/><img src="images/yang.png"class="img4"/><img src="images/zhang.png"class="img5"/></div><div class="taiyang"><img src="images/taiyang.png"/></div><div class="footer"><div class="ftou1"><img src="images/ou2.png"/></div><div class="ftou2"><img src="images/ou3.png"/></div><div class="shan"><img class="leftshan"src="images/shan1.png"/><img class="middleshan"src="images/shan2.png"/><img class="rightshan"src="images/shan3.png"/></div><div class="shui"><img src="images/shui.png"/><img src="images/chuan.png"/></div></div><img class="leftyun"src="images/leftyun.png"/><img class="rightyun"src="images/rightyun.png"/></section></body>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript">
-    $(function(){
-        $('.ou1').stop().animate({'opacity':'1'},800);
-         setTimeout(
-            function(){
-                $('.img1').stop().animate({'opacity':'1'},2000);
-            }, 900)
-         setTimeout(
-            function(){
-                $('.img2').stop().animate({'opacity':'1'},2000);
-            }, 1800)
-          setTimeout(
-            function(){
-                $('.img3').stop().animate({'opacity':'1'},2000);
-            }, 2700)
-           setTimeout(
-            function(){
-                $('.img4').stop().animate({'opacity':'1'},2000);
-            }, 3600)
-            setTimeout(
-            function(){
-                $('.img5').stop().animate({'opacity':'1'},2000);
-            }, 4500)
-
-            // circle出场结束
-            
-         setTimeout(
-            function(){
-                $('.rightyun').stop().animate({'opacity':'1'},1000);
-            }, 5400)
-          setTimeout(
-            function(){
-                $('.leftyun').stop().animate({'opacity':'1'},1000);
-            }, 6300)
-          // 太阳
-           setTimeout(
-            function(){
-                $('.taiyang img').stop().animate({'opacity':'1'},1000);
-            }, 7200)
-// footer
-            setTimeout(
-            function(){
-                $('.ftou1 img').stop().animate({'opacity':'1'},800);
-            }, 8100)
-
-             setTimeout(
-            function(){
-                $('.ftou2 img').stop().animate({'opacity':'1'},800);
-            }, 9000)
-
-             // 山
-          setTimeout(
-            function(){
-                $('.leftshan').stop().animate({'opacity':'1'},800);
-            }, 9900)
-           setTimeout(
-            function(){
-                $('.middleshan').stop().animate({'opacity':'1'},800);
-            }, 10800)
-            setTimeout(
-            function(){
-                $('.rightshan').stop().animate({'opacity':'1'},800);
-            }, 11700)
-        // 水
-         setTimeout(
-            function(){
-                $('.shui').stop().animate({'opacity':'1'},1000);
-            }, 12600)
-    })
+    $(function(){$('.ou1').stop().animate({'opacity':'1'},800);setTimeout(function(){$('.img1').stop().animate({'opacity':'1'},2000);},900)
+setTimeout(function(){$('.img2').stop().animate({'opacity':'1'},2000);},1800)
+setTimeout(function(){$('.img3').stop().animate({'opacity':'1'},2000);},2700)
+setTimeout(function(){$('.img4').stop().animate({'opacity':'1'},2000);},3600)
+setTimeout(function(){$('.img5').stop().animate({'opacity':'1'},2000);},4500)
+setTimeout(function(){$('.rightyun').stop().animate({'opacity':'1'},1000);},5400)
+setTimeout(function(){$('.leftyun').stop().animate({'opacity':'1'},1000);},6300) 
+setTimeout(function(){$('.taiyang img').stop().animate({'opacity':'1'},1000);},7200) 
+setTimeout(function(){$('.ftou1 img').stop().animate({'opacity':'1'},800);},8100)
+setTimeout(function(){$('.ftou2 img').stop().animate({'opacity':'1'},800);},9000) 
+setTimeout(function(){$('.leftshan').stop().animate({'opacity':'1'},800);},9900)
+setTimeout(function(){$('.middleshan').stop().animate({'opacity':'1'},800);},10800)
+setTimeout(function(){$('.rightshan').stop().animate({'opacity':'1'},800);},11700) 
+setTimeout(function(){$('.shui').stop().animate({'opacity':'1'},1000);},12600)})
     </script>
 </html>
